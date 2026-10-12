@@ -1,0 +1,183 @@
+
+.about {
+  min-height: 100vh;
+  background: #0b0907;
+  color: #f3e8d5;
+  padding: 80px 36px 70px;
+  box-sizing: border-box;
+}
+
+.about-main {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.about-main > p {
+  color: #d39729;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+}
+
+.about-main h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #f3e8d5;
+  margin: 0;
+}
+
+.about-main .para {
+  margin-top: 14px;
+}
+
+.about-main .para p {
+  color: #756e65;
+  font-size: 13px;
+  margin: 0;
+}
+
+.mac {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 14px;
+}
+
+.tech {
+  min-height: 205px;
+
+  background: #151311;
+
+  border: 1px solid #302b25;
+
+  border-radius: 14px;
+
+  padding: 25px 21px;
+
+  box-sizing: border-box;
+
+  transition: 0.3s ease;
+}
+
+.tech:hover {
+  border-color: #85601c;
+
+  transform: translateY(-3px);
+}
+
+.tech-head {
+  width: 100%;
+}
+
+.tech-main {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.tech-main > p {
+  color: #eee1cc;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 15px;
+
+  font-style: italic;
+
+  line-height: 1.75;
+
+  margin: 0;
+
+  min-height: 125px;
+}
+
+.nav {
+  margin-top: 20px;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  background: #d3982e;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.nav h5 {
+  color: white;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+
+  .mac {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .about {
+    padding: 60px 25px;
+  }
+
+  .about-main h2 {
+    font-size: 30px;
+  }
+
+  .mac {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .about {
+    padding: 50px 18px;
+  }
+
+  .about-main h2 {
+    font-size: 27px;
+  }
+
+  .about-main > p {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .tech {
+    min-height: 190px;
+    padding: 22px 18px;
+  }
+
+  .tech-main > p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+}

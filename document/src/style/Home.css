@@ -1,0 +1,202 @@
+.home-menu {
+  min-height: calc(100vh - 70px);
+  background: #0b0907;
+  color: #f5ead7;
+  padding: 80px 36px 0;
+  box-sizing: border-box;
+}
+.home-tech {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.home-tech > p {
+  color: #d69a2d;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 0 28px;
+}
+
+.menu-card {
+  text-align: center;
+}
+
+.menu-card h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 1.18;
+  color: #f4ead8;
+  margin: 0;
+}
+
+.menu-card span {
+  color: #d49a2f;
+  font-style: italic;
+}
+.home-para {
+  max-width: 620px;
+  margin: 25px auto 0;
+}
+
+.home-para p {
+  color: #817a72;
+  font-size: 15px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.home-btn button {
+  min-width: 168px;
+  height: 44px;
+
+  padding: 0 25px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #d49a32;
+  color: #fff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.home-btn button:hover {
+  background: #b98124;
+  transform: translateY(-2px);
+}
+.home-btn .btn2 button {
+  background: transparent;
+  border: 1px solid #38332d;
+  color: #f3eadb;
+}
+
+.home-btn .btn2 button:hover {
+  border-color: #d49a32;
+  color: #d49a32;
+  background: transparent;
+}
+
+.fest {
+  border-top: 1px solid #302b25;
+
+  margin-top: 56px;
+
+  min-height: 105px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 58px;
+}
+
+.home-fest {
+  min-width: 70px;
+  text-align: center;
+}
+
+.home-fest h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 25px;
+  font-weight: 400;
+
+  color: #d49a2f;
+}
+
+.home-fest p {
+  margin: 4px 0 0;
+
+  color: #777068;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+
+  .home-menu {
+    padding: 60px 25px 0;
+  }
+
+  .menu-card h1 {
+    font-size: 48px;
+  }
+
+  .home-para {
+    max-width: 550px;
+  }
+
+  .fest {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .home-menu {
+    padding: 50px 18px 0;
+  }
+
+  .home-tech > p {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .menu-card h1 {
+    font-size: 38px;
+  }
+
+  .home-para p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .home-btn {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .home-btn button {
+    width: 200px;
+  }
+
+  .fest {
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 25px 0;
+  }
+
+  .home-fest {
+    min-width: 55px;
+  }
+
+  .home-fest h2 {
+    font-size: 21px;
+  }
+
+  .home-fest p {
+    font-size: 8px;
+  }
+}
